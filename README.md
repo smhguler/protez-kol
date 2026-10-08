@@ -4,20 +4,30 @@ Windows için DarkOrbit Unity 1.1.113 yardımcı uygulaması. Kullanım için ge
 
 ## İndir ve çalıştır
 
-[Güncel paketi indir](https://github.com/smhguler/protez-kol/releases/latest/download/Protez-Kol-GitHub-v0.6.2.zip). ZIP'i bir klasöre çıkarıp `ProtezKol.exe` dosyasını çalıştır. Sana verilen lisans anahtarını gir. Oyun haritasını açıp uygulamadan bağlan.
+[Windows için güncel paketi indir](https://github.com/smhguler/protez-kol/releases/latest/download/Protez-Kol.zip)
+
+1. ZIP'i bir klasöre çıkar. ZIP'in içinden çalıştırma.
+2. `ProtezKol.exe` dosyasını aç, sana verilen müşteri lisans anahtarını gir ve **Etkinleştir** düğmesine bas.
+3. DarkOrbit'i açıp oyun haritasına gir. Protez Kol'da **Bağlan** düğmesine bas.
+
+64 bit Windows ve internet bağlantısı gerekir. Ek .NET kurulumu gerekmez. Doğrulanmış oyun sürümü **DarkOrbit Unity 1.1.113**; Flash desteği bulunmaz.
+
+## Kullanım
 
 F6 en yakın NPC'yi, F7 en yakın oyuncuyu, F8 başka bir oyuncunun en yakın PET'ini seçer. Tuşları uygulamadan değiştirebilirsin. Hedef değiştirme, seçimden sonra saldırı isteği, daha yakın aynı tür hedefe geçiş ve NPC/oyuncu için ayrı RSB cephaneleri isteğe bağlıdır. Kendi klanın ve ittifaklarının oyuncuları/PET'leri hedeflemeden elenir.
 
-“Tuşla seçince saldır” açıkken, oyun içinde seçili cephaneyle ateşlemeye başlanır. Saldırı başlatmak için belirli bir cephaneye ya da 1–4 tuşlarına sabitlenmez. RSB geçişi ayrıca açıksa onun ayarlanan cephane döngüsü uygulanır.
+Otomatik ateşleme için **Tuşla seçince saldır** kutusunu aç. Saldırı, oyunda seçili cephaneyle başlar. RSB geçişi ayrıca açıksa ayarladığın cephane döngüsü kullanılır.
 
-F9 uygulamanın yeni komutlarını durdurur. Oyunda zaten başlamış ateşi ayrıca durdurmaz. Flash desteği bulunmaz. NPC saldırısı canlı oyunda saldırı durumu ve cephane tüketimiyle doğrulandı; oyuncu/PET saldırısı ve yeni klan/PET okumaları ayrıca canlı test edilmedi.
+**F9**, uygulamanın yeni komutlarını durdurur; oyunda başlamış ateşi durdurmaz. Ayrıntılı kullanım paket içindeki **ONCE-OKU.txt** dosyasındadır.
 
-## Lisans bağlantısı
+## Lisans ve destek
 
-Bu sürüm `license-route.json` dosyasından imzalı güncel sunucu adresini otomatik bulur. Sunucu yeniden açıldığında yeni paket indirmek gerekmez. Bir adres değişikliğini kabul etmeden önce uygulama içine gömülü açık anahtarla imzayı doğrular. Bu dosya müşteri lisansı vermez; lisans sunucusu ayrıca çevrimiçi doğrulama yapar.
+Lisans çevrimiçi doğrulanır. Anahtarını paylaşma. Başka bir bilgisayara geçerken cihaz erişiminin sıfırlanması için lisansı aldığın kişiye başvur.
 
-Lisans sunucusunun bulunduğu bilgisayar ve internet bağlantısı açık olmalıdır. Sunucu kapalıyken yeni lisans girişi yapılamaz. Hâlihazırda alınmış kullanım izni en fazla 15 dakika korunur. Bu dağıtım dosyası ve adres bulma desteği eski v0.6 paketlerine sonradan eklenemez; v0.6.1'e bir kez geçmek gerekir.
+Lisans bağlantısı hatası alırsan internetini kontrol et ve birkaç dakika sonra tekrar dene. Sorun sürerse lisansı aldığın kişiye hata mesajını ilet; lisans anahtarını herkese açık paylaşma.
 
-Bigpoint oyun otomasyonunu kullanım şartlarında yasaklar; hesap engelleme riski vardır. Bu uygulama Bigpoint ürünü değildir ve yayıncı onayı bulunduğu iddia edilmez. Lisans satın almak yayıncı izni anlamına gelmez.
+## Bilmen gerekenler
 
-Bu depo yalnızca dağıtım paketi, kullanım açıklaması ve imzalı bağlantı belgesini içerir. Lisans veritabanı, müşteri anahtarları ve özel imza anahtarı burada bulunmaz.
+NPC saldırısı canlı oyunda doğrulandı. Oyuncu/PET saldırısı ve yeni klan/PET okumaları ayrıca canlı test edilmedi.
+
+Bigpoint oyun otomasyonunu kullanım şartlarında yasaklar; hesabın engellenebilir. Protez Kol, Bigpoint ürünü değildir ve Bigpoint tarafından onaylanmamıştır.
