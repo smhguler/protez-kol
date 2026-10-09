@@ -2,13 +2,19 @@
 
 Windows için DarkOrbit Unity 1.1.112 ve 1.1.113 yardımcı uygulaması. Kullanım için geçerli müşteri lisansı gerekir.
 
-## İndir ve çalıştır
+## İndir ve kur
 
-[Windows için güncel paketi indir](https://github.com/smhguler/protez-kol/releases/latest/download/Protez-Kol.zip)
+[Windows için kurulum paketini indir](https://github.com/smhguler/protez-kol/releases/latest/download/Protez-Kol-Kurulum.exe)
 
-1. ZIP'i bir klasöre çıkar. ZIP'in içinden çalıştırma.
-2. `ProtezKol.exe` dosyasını aç, sana verilen müşteri lisans anahtarını gir ve **Etkinleştir** düğmesine bas.
-3. DarkOrbit'i açıp oyun haritasına gir. Protez Kol'da **Bağlan** düğmesine bas.
+1. `Protez-Kol-Kurulum.exe` dosyasını açıp kurulum sihirbazını tamamla. İlk indirmede Windows çalıştırma onayı gösterebilir.
+2. Sonraki açılışlarda masaüstündeki **Protez Kol** kısayolunu kullan; kurulum dosyasını yeniden açman gerekmez.
+3. İlk kullanımda müşteri lisans anahtarını gir ve **Etkinleştir** düğmesine bas.
+4. DarkOrbit'i açıp oyun haritasına gir. Protez Kol'da **Bağlan** düğmesine bas.
+
+Kurulum Windows kullanıcı hesabına yapılır; yönetici yetkisi istemez. Güncellemeden önce açık Protez Kol'u kapatıp yeni kurulum paketini çalıştır. Lisansın ve ayarların korunur. Kaldırmak için Windows Ayarları > Uygulamalar bölümünü kullan.
+
+Kurulumsuz kullanmak istersen [ZIP paketini indir](https://github.com/smhguler/protez-kol/releases/latest/download/Protez-Kol.zip), bir klasöre çıkar ve `ProtezKol.exe` dosyasını aç.
+
 
 64 bit Windows ve internet bağlantısı gerekir. Ek .NET kurulumu gerekmez. Desteklenen oyun sürümleri **DarkOrbit Unity 1.1.112 ve 1.1.113**; Flash desteği bulunmaz. Desteklenen sürüm otomatik tanınır. Oyun güncellenirse yeni bir Protez Kol sürümü gerekebilir.
 
@@ -22,7 +28,7 @@ Otomatik ateşleme için **Tuşla seçince saldır** kutusunu aç. Saldırı, oy
 
 ## Lisans ve destek
 
-Lisans çevrimiçi doğrulanır. Anahtarını paylaşma. Başka bir bilgisayara geçerken cihaz erişiminin sıfırlanması için lisansı aldığın kişiye başvur.
+Lisans çevrimiçi doğrulanır. Anahtarını paylaşma. Her bilgisayarda lisans anahtarınla etkinleştir. Lisansına tanımlanan bilgisayar sınırı geçerlidir; sınırın dolarsa lisansı aldığın kişiye başvur.
 
 Lisans bağlantısı hatası alırsan internetini kontrol et ve birkaç dakika sonra tekrar dene. Sorun sürerse lisansı aldığın kişiye hata mesajını ilet; lisans anahtarını herkese açık paylaşma.
 
