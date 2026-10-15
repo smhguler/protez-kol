@@ -1,6 +1,6 @@
 # Protez Kol
 
-Windows için DarkOrbit Unity ve Flash yardımcı uygulaması. v0.6.7, Flash desteğini ve otomatik güncellemeyi aynı kuruluma ekler; oyuncu adı üzerindeki beyaz bilgi kutusunu kaldırır. Kullanım için geçerli müşteri lisansı gerekir.
+Windows için DarkOrbit Unity ve Flash yardımcı uygulaması. v0.6.7, Flash desteğini ve otomatik güncellemeyi aynı kuruluma ekler; oyuncu adı üzerindeki beyaz bilgi kutusunu kaldırır. Kullanım için geçerli müşteri lisansı gerekir; lisans satın almak için [Discord sunucumuza](https://discord.gg/yTcYZxEQdC) katıl.
 
 ## İndir ve kur
 
@@ -31,9 +31,9 @@ Otomatik ateşleme için **Tuşla seçince saldır** kutusunu aç. Saldırı, oy
 
 ## Lisans ve destek
 
-Lisans çevrimiçi doğrulanır. Anahtarını paylaşma. Lisansına tanımlanan bilgisayar sınırı geçerlidir; sınırsız lisans birden fazla bilgisayarda etkinleştirilebilir. Bilgisayar sınırın dolarsa lisansı aldığın kişiye başvur.
+Lisans çevrimiçi doğrulanır. Anahtarını paylaşma. Lisansına tanımlanan bilgisayar sınırı geçerlidir; sınırsız lisans birden fazla bilgisayarda etkinleştirilebilir. Bilgisayar sınırın dolarsa [Discord](https://discord.gg/yTcYZxEQdC) üzerinden bize yaz.
 
-Lisans bağlantısı hatası alırsan internetini kontrol et ve birkaç dakika sonra tekrar dene. Sorun sürerse lisansı aldığın kişiye hata mesajını ilet; lisans anahtarını herkese açık paylaşma.
+Lisans bağlantısı hatası alırsan internetini kontrol et ve birkaç dakika sonra tekrar dene. Sorun sürerse hata mesajını [Discord](https://discord.gg/yTcYZxEQdC) üzerinden bize ilet. Lisans anahtarını Discord kanallarında veya başka herkese açık bir yerde paylaşma.
 
 ## Bilmen gerekenler
 
