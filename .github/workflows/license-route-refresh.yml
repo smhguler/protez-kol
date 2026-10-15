@@ -1,0 +1,64 @@
+name: Refresh signed license connection
+on:
+  schedule:
+    - cron: '13 */6 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: signed-license-route
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Verify and update the public connection document
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+        shell: bash
+        run: |
+          node <<'JS'
+          const crypto = require('node:crypto');
+          const publicKey = "-----BEGIN PUBLIC KEY-----\nMIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEA1W5qdA3WeYZ6IpEfr4xb\nHGejFQFCmnFrzaKYdwGEkYXu5Ou3COWRJfLfZirC+gOrsUWLMJu7HFJV1CpN0dA5\nA1TNpjggfYzGsbvecpKKVKs5KuQw7ukyEH0MynYddLVN+lyr84Ja/5cmX+iJXOWH\noW7goR27ZYhf1DptLMZkoUMY4F6SK+6pQKn/Kw7SPQ8bSupQLd3zpTXMdrAhn038\n4JvE11dmr5H8p2VRSqooBlNKIcbZ3/ZExX6gLz8lfM6e2gpLnot8jASTlcjQSjRD\nQXz9MqTCzdV3fYUrs8cVN3/loNvqcjyetC0BzMnMovUVmzzW67wmxdtmjt6AuesZ\nYW1jmf6WikJ+a5FzRT0rTLNuH6mdRjZTsDRpgswd5yCFZxFT44nCBZEiXycGAufF\nFZN+qv7pCRDvSRGTSuUGD0jtD+XcOTUwpfQYwGf9J75k28F9auvR93G5sPw2hjbC\nuZMTRKabCvr6XDXT47u3Ripl6IuY2KJ43ocNGINQ56gRAgMBAAE=\n-----END PUBLIC KEY-----";
+          const endpoint = 'https://168.222.180.85/';
+          async function json(url, options = {}) {
+            const response = await fetch(url, { ...options, redirect: 'error', signal: AbortSignal.timeout(15000) });
+            if (!response.ok) throw new Error('Connection document request failed: ' + response.status);
+            const body = await response.text();
+            if (Buffer.byteLength(body) > 32768) throw new Error('Oversized response');
+            return JSON.parse(body);
+          }
+          function verify(document) {
+            if (typeof document.payload !== 'string' || typeof document.signature !== 'string' ||
+                document.payload.length > 8192 || document.signature.length > 2048) throw new Error('Invalid signed document');
+            const data = Buffer.from(document.payload, 'base64');
+            if (!crypto.verify('sha256', data, publicKey, Buffer.from(document.signature, 'base64'))) throw new Error('Invalid signature');
+            const route = JSON.parse(data);
+            const start = Date.parse(route.issuedAt), end = Date.parse(route.expiresAt), now = Date.now();
+            if (route.issuer !== 'orbittool-license.route' || route.product !== 'orbittool-unity' ||
+                route.version !== 1 || route.serverUrl !== endpoint || !Number.isFinite(start) || !Number.isFinite(end) ||
+                start > now + 300000 || end <= now + 172800000 || end <= start || end - start > 604800000)
+              throw new Error('Unexpected route identity, endpoint or lifetime');
+          }
+          (async () => {
+            const health = await json(endpoint + 'health');
+            if (health.status !== 'ok' || health.product !== 'orbittool-unity' || health.publicOnly !== true)
+              throw new Error('Restricted license listener unavailable');
+            const document = await json(endpoint + 'license-route.json');
+            verify(document);
+            const api = 'https://api.github.com/repos/' + process.env.REPOSITORY + '/contents/license-route.json';
+            const headers = { Authorization: 'Bearer ' + process.env.GH_TOKEN, Accept: 'application/vnd.github+json',
+                              'X-GitHub-Api-Version': '2022-11-28', 'Content-Type': 'application/json' };
+            const existing = await json(api + '?ref=main', {headers});
+            const text = JSON.stringify(document);
+            if (Buffer.from(existing.content, 'base64').toString('utf8').trim() === text) {
+              console.log('Verified connection document is current.');
+              return;
+            }
+            await json(api, {method:'PUT', headers, body:JSON.stringify({branch:'main',sha:existing.sha,
+              message:'Refresh signed license connection',content:Buffer.from(text).toString('base64')})});
+            console.log('Verified public connection document updated.');
+          })().catch(error => { console.error(error.message); process.exitCode = 1; });
+          JS
