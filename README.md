@@ -1,6 +1,6 @@
 # Protez Kol
 
-Windows için DarkOrbit Unity ve Flash yardımcı uygulaması. v0.6.7, Flash desteğini ve otomatik güncellemeyi aynı kuruluma ekler; oyuncu adı üzerindeki beyaz bilgi kutusunu kaldırır. Kullanım için geçerli müşteri lisansı gerekir; lisans satın almak için [Discord sunucumuza](https://discord.gg/yTcYZxEQdC) katıl.
+Windows için DarkOrbit Unity ve Flash yardımcı uygulaması. v0.6.8, Flash için uygulama seçimini ekler. Kullanım için geçerli müşteri lisansı gerekir; lisans satın almak için [Discord sunucumuza](https://discord.gg/yTcYZxEQdC) katıl.
 
 ## İndir ve kur
 
@@ -10,6 +10,7 @@ Windows için DarkOrbit Unity ve Flash yardımcı uygulaması. v0.6.7, Flash des
 2. Sonraki açılışlarda masaüstündeki **Protez Kol** kısayolunu kullan.
 3. İlk kullanımda müşteri lisans anahtarını gir ve **Etkinleştir** düğmesine bas.
 4. DarkOrbit'i açıp oyun haritasına gir. Protez Kol'da **Bağlan** düğmesine bas. Oyun seçimi sorulursa Unity veya Flash istemcisini seç.
+5. Flash otomatik bulunamazsa **Uygulama seç** düğmesinden oyunun açık olduğu istemciyi veya tarayıcıyı seç. Seçimden sonra otomatik saldırı seçeneklerini yeniden aç. Kullanılan Flash bileşeninin desteklenmesi gerekir.
 
 Kurulum Windows kullanıcı hesabına yapılır; yönetici yetkisi istemez. Güncellemeden önce açık Protez Kol'u kapatıp yeni kurulum paketini çalıştır. Lisansın ve ayarların korunur. Kaldırmak için Windows Ayarları > Uygulamalar bölümünü kullan.
 
