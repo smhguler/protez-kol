@@ -1,6 +1,6 @@
 # Protez Kol
 
-Windows için DarkOrbit Unity ve Flash yardımcı uygulaması. v0.6.8, Flash için uygulama seçimini ekler. Kullanım için geçerli müşteri lisansı gerekir; lisans satın almak için [Discord sunucumuza](https://discord.gg/yTcYZxEQdC) katıl.
+Windows için DarkOrbit Unity ve Flash yardımcı uygulaması. v0.6.9, hedef taramasını ve otomatik hedef seçimini daha kararlı hale getirir. Kullanım için geçerli müşteri lisansı gerekir; lisans satın almak için [Discord sunucumuza](https://discord.gg/yTcYZxEQdC) katıl.
 
 ## İndir ve kur
 
