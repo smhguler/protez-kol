@@ -1,6 +1,6 @@
 # Protez Kol
 
-Windows için DarkOrbit Unity ve Flash yardımcı uygulaması. v0.6.10, Unity ve Flash için destek raporunu ekler; otomatik hedef taraması 75 ms aralıkla çalışır. Kullanım için geçerli müşteri lisansı gerekir; lisans satın almak için [Discord sunucumuza](https://discord.gg/yTcYZxEQdC) katıl.
+Windows için DarkOrbit Unity ve Flash yardımcı uygulaması. v0.6.11, resmî 32 ve 64 bit Flash istemcilerini destekler; otomatik hedef taraması 75 ms aralıkla çalışır. Kullanım için geçerli müşteri lisansı gerekir; lisans satın almak için [Discord sunucumuza](https://discord.gg/yTcYZxEQdC) katıl.
 
 ## İndir ve kur
 
@@ -17,7 +17,7 @@ Kurulum Windows kullanıcı hesabına yapılır; yönetici yetkisi istemez. Gün
 
 Kurulumsuz kullanmak istersen [ZIP paketini indir](https://github.com/smhguler/protez-kol/releases/latest/download/Protez-Kol.zip), bir klasöre çıkar ve `ProtezKol.exe` dosyasını aç.
 
-64 bit Windows ve internet bağlantısı gerekir. Ek .NET kurulumu gerekmez. Desteklenen istemciler **DarkOrbit Unity 1.1.112, 1.1.113, 1.1.114** ve **resmî Flash 1.6.9**. Tek açık istemci otomatik tanınır; iki istemci açıksa veya oyun henüz açık değilse seçim ekranı gösterilir. Lisans ortaktır, Unity ve Flash ayarları ayrı saklanır. Oyun güncellenirse yeni bir Protez Kol sürümü gerekebilir.
+64 bit Windows ve internet bağlantısı gerekir. Ek .NET kurulumu gerekmez. Desteklenen istemciler **DarkOrbit Unity 1.1.112, 1.1.113, 1.1.114** ve **resmî Flash 1.6.9 (32 ve 64 bit)**. Tek açık istemci otomatik tanınır; iki istemci açıksa veya oyun henüz açık değilse seçim ekranı gösterilir. Lisans ortaktır, Unity ve Flash ayarları ayrı saklanır. Oyun güncellenirse yeni bir Protez Kol sürümü gerekebilir.
 
 Kurulumla yüklenen uygulama her açılışta yeni kararlı sürümü denetler. Yeni sürüm varsa önce sana sorar; onaylamadan hiçbir şey indirilmez. **Evet** dersen resmî GitHub paketini indirip doğrular, komutları durdurur ve güncellemeden sonra yeniden açılır. Şimdi istemezsen daha sonra uygulamanın üst kısmındaki güncelleme bağlantısına tıklayabilirsin. Lisansın ve ayarların korunur. İnternet yoksa mevcut sürüm açılır. Otomatik güncellemeyi kullanmak için kurulum paketini bir kez yükle; ZIP kullanımı elle güncellenir.
 
