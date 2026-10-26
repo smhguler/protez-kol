@@ -1,6 +1,6 @@
 # Protez Kol
 
-Windows için DarkOrbit Unity ve Flash yardımcı uygulaması. v0.6.12, Unity 1.1.115 ve güncel resmî 32 ve 64 bit Flash istemcilerini destekler; otomatik hedef taraması 75 ms aralıkla çalışır. Kullanım için geçerli müşteri lisansı gerekir; lisans satın almak için [Discord sunucumuza](https://discord.gg/yTcYZxEQdC) katıl.
+Windows için DarkOrbit Unity ve Flash yardımcı uygulaması. v0.6.13, Unity 1.1.115 ve güncel resmî 32 ve 64 bit Flash istemcilerini destekler; otomatik hedef taraması 75 ms aralıkla çalışır. Kullanım için geçerli müşteri lisansı gerekir; lisans satın almak için [Discord sunucumuza](https://discord.gg/yTcYZxEQdC) katıl.
 
 ## İndir ve kur
 
@@ -24,6 +24,8 @@ Kurulumla yüklenen uygulama her açılışta yeni kararlı sürümü denetler. 
 ## Kullanım
 
 F6 en yakın NPC'yi, F7 en yakın oyuncuyu, F8 başka bir oyuncunun en yakın PET'ini seçer. Tuşları uygulamadan değiştirebilirsin. Hedef değiştirme, seçimden sonra saldırı isteği, daha yakın aynı tür hedefe geçiş ve NPC/oyuncu için ayrı RSB cephaneleri isteğe bağlıdır. Kendi klanın ve ittifaklarının oyuncuları/PET'leri hedeflemeden elenir.
+
+Unity 1.1.115’te mesafe, uçuş sırasındaki güncel konuma göre hesaplanır. En yakın hedef kısayolları ve **Daha yakın aynı tür hedefe geç ve saldır** seçeneği bu mesafeyi kullanır. Tablodaki mesafe ve koordinatlar da hareket sırasında yenilenir.
 
 Otomatik ateşleme için **Tuşla seçince saldır** kutusunu aç. Saldırı, oyunda seçili cephaneyle başlar. **RSB otomatik geçiş** açıksa devam eden saldırıda RSB kullanılınca ayarladığın bekleme cephanesine döner. Geçici oyun hatalarında döngü açık kalır; kapatmak için kutunun işaretini kaldır.
 
